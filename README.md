@@ -153,7 +153,6 @@ This repository contains a collection of skills for Hermes Agent, organized by c
 
 ## Custom Skills (Local)
 
-Located in `/home/raghu/Skills/`:
 - **stem-visualization-skill** — STEM visualization capabilities
 - **universal-visual-learning-skill** — Universal visual learning framework
 
