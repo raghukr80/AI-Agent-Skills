@@ -1,0 +1,97 @@
+{
+  "title": "Free fall in a vacuum",
+  "domain": "science",
+  "intent": [
+    "explain_concept"
+  ],
+  "learner_level": "L2",
+  "concept_model": {
+    "entities": [
+      "Earth",
+      "heavy object",
+      "light object",
+      "vacuum"
+    ],
+    "variables": [
+      "mass",
+      "force",
+      "acceleration"
+    ],
+    "relationships": [
+      "gravity produces force proportional to mass",
+      "F=ma links force and acceleration"
+    ]
+  },
+  "visual_plan": {
+    "visual_type": "motion_diagram",
+    "goal": "Show two masses accelerating equally when air resistance is absent",
+    "renderer": "image-or-svg",
+    "interactive": false,
+    "elements": [
+      "vacuum chamber",
+      "two objects",
+      "equal acceleration vectors",
+      "time snapshots"
+    ],
+    "selected_renderer": "auto",
+    "animation_spec": {}
+  },
+  "visual": {
+    "title": "Equal acceleration in a vacuum",
+    "description": "Conceptual motion diagram showing both objects covering increasing distances by the same acceleration pattern.",
+    "alt_text": "Two objects of different masses fall side by side inside a vacuum chamber with equal downward acceleration arrows.",
+    "spec": {
+      "animation_spec": {}
+    }
+  },
+  "explanation": {
+    "visual_intuition": "The objects have different weights, but the heavier object also needs proportionally more force to produce the same acceleration.",
+    "how_it_works": "Gravity provides F=mg. Newton's second law gives F=ma. Equating them gives ma=mg and therefore a=g.",
+    "why_it_works": "Mass appears on both sides and cancels. With negligible air resistance, acceleration depends on the gravitational field, not the object's mass.",
+    "worked_example": "If the local gravitational acceleration is approximately 9.8 m/s\u00b2, both objects have approximately that acceleration regardless of mass.",
+    "verification": "The units of acceleration remain m/s\u00b2 and the result is independent of mass."
+  },
+  "equations": [
+    {
+      "equation": "F = mg",
+      "meaning": "gravitational force",
+      "symbols": [
+        "F = force",
+        "m = mass",
+        "g = gravitational acceleration"
+      ],
+      "units": "N"
+    },
+    {
+      "equation": "F = ma",
+      "meaning": "Newton's second law",
+      "symbols": [
+        "F = net force",
+        "m = mass",
+        "a = acceleration"
+      ],
+      "units": "N"
+    },
+    {
+      "equation": "a = g",
+      "meaning": "free-fall acceleration in the ideal vacuum model",
+      "symbols": [
+        "a = acceleration",
+        "g = gravitational acceleration"
+      ],
+      "units": "m/s\u00b2"
+    }
+  ],
+  "assumptions": [
+    "Air resistance is negligible.",
+    "The gravitational field is approximately uniform over the experiment."
+  ],
+  "verification": [
+    "Mass cancels algebraically.",
+    "Both sides have consistent force units before cancellation."
+  ],
+  "misconceptions": [
+    "A heavier object does not automatically have greater gravitational acceleration in the ideal vacuum model."
+  ],
+  "key_takeaway": "In a vacuum, different masses fall with the same gravitational acceleration because the gravitational force and inertial resistance both scale with mass."
+}

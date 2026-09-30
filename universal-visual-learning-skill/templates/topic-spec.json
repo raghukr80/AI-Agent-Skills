@@ -1,0 +1,28 @@
+{
+  "topic": "string",
+  "audience": "learner|student|engineer|architect|interview|mixed",
+  "goal": "string",
+  "sections": [
+    "definition",
+    "mental_model",
+    "flow",
+    "example",
+    "comparison",
+    "failure_modes",
+    "real_world",
+    "interview",
+    "takeaways"
+  ],
+  "interaction": {
+    "type": "simulation|stepper|slider|toggle|tabs|quiz",
+    "parameter": "string"
+  },
+  "image": {
+    "aspect_ratio": "16:9",
+    "style": "technical educational infographic",
+    "credits": {
+      "linkedin": "https://linkedin.com/in/raghupathyk",
+      "github": "https://github.com/raghukr80"
+    }
+  }
+}

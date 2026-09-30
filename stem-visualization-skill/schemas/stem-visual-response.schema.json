@@ -1,0 +1,236 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://example.org/stem-visualization/stem-visual-response.schema.json",
+  "title": "STEM Visual Response",
+  "type": "object",
+  "required": [
+    "title",
+    "domain",
+    "intent",
+    "learner_level",
+    "concept_model",
+    "visual_plan",
+    "visual",
+    "explanation",
+    "key_takeaway"
+  ],
+  "properties": {
+    "title": {
+      "type": "string"
+    },
+    "domain": {
+      "enum": [
+        "science",
+        "technology",
+        "engineering",
+        "mathematics",
+        "interdisciplinary"
+      ]
+    },
+    "intent": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    },
+    "learner_level": {
+      "enum": [
+        "L1",
+        "L2",
+        "L3",
+        "L4",
+        "L5"
+      ]
+    },
+    "concept_model": {
+      "type": "object",
+      "properties": {
+        "entities": {
+          "type": "array",
+          "items": {
+            "type": "string"
+          }
+        },
+        "variables": {
+          "type": "array",
+          "items": {
+            "type": "string"
+          }
+        },
+        "relationships": {
+          "type": "array",
+          "items": {
+            "type": "string"
+          }
+        },
+        "inputs": {
+          "type": "array",
+          "items": {
+            "type": "string"
+          }
+        },
+        "transformations": {
+          "type": "array",
+          "items": {
+            "type": "string"
+          }
+        },
+        "outputs": {
+          "type": "array",
+          "items": {
+            "type": "string"
+          }
+        }
+      }
+    },
+    "visual_plan": {
+      "type": "object",
+      "required": [
+        "visual_type",
+        "goal"
+      ],
+      "properties": {
+        "visual_type": {
+          "type": "string"
+        },
+        "goal": {
+          "type": "string"
+        },
+        "renderer": {
+          "type": "string"
+        },
+        "interactive": {
+          "type": "boolean"
+        },
+        "elements": {
+          "type": "array",
+          "items": {
+            "type": "string"
+          }
+        },
+        "selected_renderer": {
+          "type": "string"
+        },
+        "animation_spec": {
+          "type": "object"
+        }
+      }
+    },
+    "visual": {
+      "type": "object",
+      "properties": {
+        "title": {
+          "type": "string"
+        },
+        "description": {
+          "type": "string"
+        },
+        "spec": {
+          "type": "object",
+          "animation_spec": {
+            "type": "object",
+            "properties": {
+              "mode": {
+                "type": "string"
+              },
+              "duration_ms": {
+                "type": "number"
+              },
+              "loop": {
+                "type": "boolean"
+              },
+              "states": {
+                "type": "array",
+                "items": {
+                  "type": "string"
+                }
+              },
+              "transitions": {
+                "type": "array",
+                "items": {
+                  "type": "string"
+                }
+              },
+              "controls": {
+                "type": "array",
+                "items": {
+                  "type": "string"
+                }
+              }
+            }
+          }
+        },
+        "alt_text": {
+          "type": "string"
+        }
+      }
+    },
+    "explanation": {
+      "type": "object",
+      "properties": {
+        "visual_intuition": {
+          "type": "string"
+        },
+        "how_it_works": {
+          "type": "string"
+        },
+        "why_it_works": {
+          "type": "string"
+        },
+        "worked_example": {
+          "type": "string"
+        },
+        "verification": {
+          "type": "string"
+        }
+      }
+    },
+    "equations": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "required": [
+          "equation"
+        ],
+        "properties": {
+          "equation": {
+            "type": "string"
+          },
+          "meaning": {
+            "type": "string"
+          },
+          "symbols": {
+            "type": "array",
+            "items": {
+              "type": "string"
+            }
+          },
+          "units": {
+            "type": "string"
+          }
+        }
+      }
+    },
+    "assumptions": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    },
+    "verification": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    },
+    "misconceptions": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    },
+    "key_takeaway": {
+      "type": "string"
+    }
+  }
+}

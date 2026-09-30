@@ -1,0 +1,80 @@
+{
+  "title": "Understanding a quadratic function",
+  "domain": "mathematics",
+  "intent": [
+    "explain_concept",
+    "mathematical_visualization"
+  ],
+  "learner_level": "L2",
+  "concept_model": {
+    "entities": [
+      "parabola",
+      "x-axis",
+      "y-axis",
+      "vertex"
+    ],
+    "variables": [
+      "x",
+      "y",
+      "a",
+      "b",
+      "c"
+    ],
+    "relationships": [
+      "y depends on x",
+      "a controls opening direction and width",
+      "vertex gives the turning point"
+    ]
+  },
+  "visual_plan": {
+    "visual_type": "function_graph",
+    "goal": "Connect equation parameters to the shape and position of a parabola",
+    "renderer": "native-chart-or-svg",
+    "interactive": true,
+    "elements": [
+      "coordinate axes",
+      "curve",
+      "vertex",
+      "parameter controls"
+    ],
+    "selected_renderer": "auto",
+    "animation_spec": {}
+  },
+  "visual": {
+    "title": "Quadratic function as a shape",
+    "description": "Interactive graph of y=ax\u00b2+bx+c with parameter controls.",
+    "alt_text": "A parabola on a coordinate plane with its vertex highlighted.",
+    "spec": {
+      "animation_spec": {}
+    }
+  },
+  "explanation": {
+    "visual_intuition": "The equation is a rule that turns each x value into a y value; the graph shows all those input-output pairs at once.",
+    "how_it_works": "Changing coefficients changes the curve's opening, position, and width.",
+    "why_it_works": "The x\u00b2 term creates the characteristic curved relationship rather than a straight line.",
+    "worked_example": "For y=x\u00b2, x=2 gives y=4 and x=-2 also gives y=4, creating symmetry around the y-axis.",
+    "verification": "Substitute selected x values into the equation and confirm that the plotted y values match."
+  },
+  "equations": [
+    {
+      "equation": "y = ax\u00b2 + bx + c",
+      "meaning": "general quadratic function",
+      "symbols": [
+        "a",
+        "b",
+        "c = coefficients"
+      ],
+      "units": "context-dependent"
+    }
+  ],
+  "assumptions": [
+    "The graph uses a Cartesian coordinate system."
+  ],
+  "verification": [
+    "Check plotted points by substitution."
+  ],
+  "misconceptions": [
+    "A graph is not a separate mathematical object from the equation; it is a visual representation of the equation's input-output relationship."
+  ],
+  "key_takeaway": "A quadratic equation describes a family of curved relationships, and the graph makes the effect of its coefficients visible."
+}
